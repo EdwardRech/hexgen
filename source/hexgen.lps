@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="1">
+      <Unit0>
+        <Filename Value="hexgen.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="63" Y="28"/>
+        <UsageCount Value="48"/>
+        <Loaded Value="True"/>
+      </Unit0>
+    </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <JumpHistory Count="12" HistoryIndex="11">
+      <Position1>
+        <Filename Value="hexgen.lpr"/>
+        <Caret Line="31" Column="14" TopLine="13"/>
+      </Position1>
+      <Position2>
+        <Filename Value="hexgen.lpr"/>
+        <Caret Line="1201" Column="12" TopLine="1177"/>
+      </Position2>
+      <Position3>
+        <Filename Value="hexgen.lpr"/>
+        <Caret Line="1283" Column="28" TopLine="1240"/>
+      </Position3>
+      <Position4>
+        <Filename Value="hexgen.lpr"/>
+        <Caret Line="889" Column="29" TopLine="840"/>
+      </Position4>
+      <Position5>
+        <Filename Value="hexgen.lpr"/>
+        <Caret Line="892" Column="34" TopLine="859"/>
+      </Position5>
+      <Position6>
+        <Filename Value="hexgen.lpr"/>
+        <Caret Line="1223" Column="7" TopLine="1197"/>
+      </Position6>
+      <Position7>
+        <Filename Value="hexgen.lpr"/>
+        <Caret Line="1174" Column="14" TopLine="1134"/>
+      </Position7>
+      <Position8>
+        <Filename Value="hexgen.lpr"/>
+        <Caret Line="1222" Column="3" TopLine="1197"/>
+      </Position8>
+      <Position9>
+        <Filename Value="hexgen.lpr"/>
+        <Caret Line="1200" Column="10" TopLine="1173"/>
+      </Position9>
+      <Position10>
+        <Filename Value="hexgen.lpr"/>
+        <Caret Line="1395" Column="28" TopLine="1389"/>
+      </Position10>
+      <Position11>
+        <Filename Value="hexgen.lpr"/>
+        <Caret Line="61" Column="51" TopLine="34"/>
+      </Position11>
+      <Position12>
+        <Filename Value="hexgen.lpr"/>
+        <Caret Line="1464" Column="86" TopLine="1440"/>
+      </Position12>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

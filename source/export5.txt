@@ -1,0 +1,6 @@
+Result format:
+Hexiamond placement (from 1 to 12) = triangles (triplets), resulting from the placement.
+Refer to circle.png for hexiamond placement.
+Service that removes duplicate lines: http://textmechanic.com/text-tools/basic-text-tools/remove-duplicate-lines/
+
+
