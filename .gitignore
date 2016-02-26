@@ -1,0 +1,5 @@
+source/backup/hexgen.lpi.bak
+*.bak
+source/hexgen.exe
+*.compiled
+source/lib/i386-win32/hexgen.o
