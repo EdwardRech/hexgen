@@ -1,6 +1,0 @@
-Result format:
-Correct triangle (triplet) number - hexiamond placement (from 1 to 12) = triangles (triplets), resulting from the placement.
-Refer to icosahedron.png for hexiamond placement.
-Service that removes duplicate lines: http://textmechanic.com/text-tools/basic-text-tools/remove-duplicate-lines/
-
-

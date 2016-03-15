@@ -3,20 +3,20 @@ uses crt; //required for ClrScr
 var ein,zwei,drei,vier,funf,sechs,sieben,acht,neun,zehn,elf,zwolf,success,I:Integer; //Numbers in German - assigned to letters
 var odin,dva,tri,chetire,pyat,shest,semj,vosemj,devyat,desyat,odinnatsat,dvenadsat:String; //Numbers in Russian - assigned to randomly generated numbers
 var TRone,TRtwo,TRthree,TRfour,TRfive,TRsix,TRseven,TReight,TRnine,TRten,TReleven,TRtwelve,TRthirteen,TRfourteen,TRfifteen,TRsixteen,TRseventeen,TReighteen,TRnineteen,TRtwenty:String; //These strings represent each hexiamond triplet. TR-TRiangle
-const combinationnumber=103; //That's the amount of hexiamond combinations we have found so far.
-var WordsArray: Array [1..combinationnumber] of String; //Combination array
-var U:Integer; //used for array checking, checking the amount of correct combinations
-var choice,exportchoice,resultamount:Integer; //user choices
-var filename:String; //file name
-var combinations:text; //the variable that's assigned to the text file combinations.txt
-var exportone,exporttwo,exportthree,exportfour,exportfive:text; //variables assigned to their text files for exporting results.
-var count19:Integer; //just like in the name, it means 19 might also be counted
-var firststart:Integer; //checks whether the calculation started just now
+var combinationnumber:Integer;  //That's the amount of hexiamond combinations we have found so far.
+var WordsArray: Array [1..220] of String; //This is the array that holds all the combinations. The array has a maximum length of 220, which represents all the possible combinations.
+var U:Integer; //used to check arrays, the amount of correct combinations
+var choice,exportchoice,resultamount:Integer; //User choices
+var filename:String; //File name
+var combinations:text; //The variable that's assigned to the text file combinations.txt
+var exportone,exporttwo,exportthree,exportfour,exportfive:text; //Variables assigned to their text files for exporting results.
+var count19:Integer; //Just like in the name, it means 19 might also be counted
+var firststart:Integer; //Checks whether the calculation started just now
 var conf1,conf2,conf3,conf4,conf5,conf6,conf7,conf8,conf9,conf10:Integer; //Confirms that a branch is correct
 var conf1part,conf2part,conf3part,conf4part,conf5part,conf6part,conf7part,conf8part,conf9part,conf10part:Integer; //Used for the integers above in case multiple triplets need to be checked
 var conf10part16,conf10part17,conf10part18,conf10part19,conf10part20:Integer; //Used to check the last 5 triplets in a dodecahedron or icosahedron
 var error1,error2,error3,error4,error5,error6,error7,error8,error9,error10:Integer; //Error count in a branch
-var shape,wrong:string; //shape name; wrong triplet (can't be found in the list)
+var shape,wrong:string; //Shape name; wrong triplet (can't be found in the list)
 procedure letterAssign(var int:Integer; var str:String); //Assigns the letters depending on the number
 begin
   case int of
@@ -53,7 +53,14 @@ begin
   Randomize;
   Assign(combinations, 'combinations.txt');
   ReSet(combinations);
-  For I:=1 to combinationnumber do Readln(combinations, WordsArray[I]);
+  ReSet(combinations);
+  I:=0;
+  while not(EOF(combinations))do
+  begin
+  inc(I);
+  Readln(combinations,WordsArray[I]);
+  Inc(combinationnumber);
+  end;
   Close(combinations);
   Assign(exportone, 'export1.txt');
   Assign(exporttwo, 'export2.txt');
@@ -63,7 +70,7 @@ begin
   FirstStart:=1;
   Repeat
     begin
-    writeln('Hexiamond Placement Generator, version 6.0' );
+    writeln('Hexiamond Placement Generator, version 6.1' );
     writeln('');
     writeln('To choose a shape, write the corresponding number.');
     writeln('1) Tetrahedron');
