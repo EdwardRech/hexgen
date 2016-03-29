@@ -70,7 +70,9 @@ begin
   FirstStart:=1;
   Repeat
     begin
-    writeln('Hexiamond Placement Generator, version 6.1' );
+    writeln('Hexiamond Placement Generator, version 6.2' );
+    writeln('');
+    writeln(combinationnumber,' combinations in file');
     writeln('');
     writeln('To choose a shape, write the corresponding number.');
     writeln('1) Tetrahedron');
